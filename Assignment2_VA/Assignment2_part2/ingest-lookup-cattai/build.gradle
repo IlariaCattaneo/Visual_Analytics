@@ -1,0 +1,47 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+  }
+
+  dependencies {
+    classpath "org.elasticsearch.gradle:build-tools:${elasticsearchVersion}"
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+group = 'usi.vaa.elasticsearch.plugin.ingest'
+version = "${elasticsearchVersion}"
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'elasticsearch.esplugin'
+
+esplugin {
+  name 'ingest-lookup'
+  description 'When ingesting a document, the plugin will apply a given lookup-map on a given field'
+  classname 'usi.vaa.elasticsearch.plugin.ingest.lookup.IngestLookupPlugin'
+  // license of the plugin, may be different than the above license
+  licenseFile rootProject.file('LICENSE.txt')
+  // copyright notices, may be different than the above notice
+  noticeFile rootProject.file('NOTICE.txt')
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+  compileOnly "org.elasticsearch:elasticsearch:${elasticsearchVersion}"
+}
+
+
+// ignore javadoc linting errors for now
+tasks.withType(Javadoc) {
+  options.addStringOption('Xdoclint:none', '-quiet')
+}
+
+test {
+  jvmArgs '-Dtests.security.manager=false'
+}

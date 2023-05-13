@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-02T10:15:36" hostname="USI-Ilarias-MBP.usilu.net" time="0.057">
+  <properties/>
+  <testcase name="testInvalidConfiguration" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" time="0.054"/>
+  <testcase name="testDefaultConfiguration" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" time="0.003"/>
+  <system-out><![CDATA[[2023-05-02T06:15:36,661][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] before test
+[2023-05-02T06:15:36,709][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] after test
+[2023-05-02T06:15:36,712][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] before test
+[2023-05-02T06:15:36,713][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] after test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

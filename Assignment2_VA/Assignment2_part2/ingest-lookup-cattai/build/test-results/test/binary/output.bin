@@ -1,0 +1,8 @@
+q[2023-05-02T06:15:36,661][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] before test
+p[2023-05-02T06:15:36,709][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] after test
+q[2023-05-02T06:15:36,712][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] before test
+p[2023-05-02T06:15:36,713][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] after test
+\[2023-05-02T20:45:36,741][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testSimple] before test
+[[2023-05-02T20:45:36,747][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testSimple] after test
+`[2023-05-02T20:45:36,749][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testEmptyField] before test
+_[2023-05-02T20:45:36,750][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testEmptyField] after test
